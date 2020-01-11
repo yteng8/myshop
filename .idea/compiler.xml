@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="myshop-common" />
+        <module name="myshop-mapper" />
+        <module name="myshop-model" />
+        <module name="myshop-web" />
+        <module name="myshop-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="myshop" target="1.8" />
+      <module name="myshop-common" target="1.8" />
+      <module name="myshop-mapper" target="1.8" />
+      <module name="myshop-model" target="1.8" />
+      <module name="myshop-service" target="1.8" />
+      <module name="myshop-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="myshop" options="-parameters" />
+      <module name="myshop-common" options="-parameters" />
+      <module name="myshop-mapper" options="-parameters" />
+      <module name="myshop-model" options="-parameters" />
+      <module name="myshop-service" options="-parameters" />
+      <module name="myshop-web" options="-parameters" />
+    </option>
+  </component>
+</project>
