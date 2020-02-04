@@ -103,11 +103,12 @@ pagehelper:
 swagger2:
   enable: true
 # 配置jwt
-jwt:
+# jwt:
   # 配置请求头
-  header: Authorization
+  # header: Authorization
   # 配置密钥
-  secret: mySecret
+  # secret: mySecret
   # 配置token过期时间 两个小时
-  expiration: 7200
+  # expiration: 7200
+  # tokenHead: "Bearer "
 

@@ -8,7 +8,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
 @SpringBootApplication
-@ComponentScan(basePackages = "com.yt")
+//@ComponentScan(basePackages = "com.yt")
 @MapperScan(basePackages = "com.yt.myshop.mapper")
 
 public class MyShopApplication {

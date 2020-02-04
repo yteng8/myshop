@@ -1,4 +1,4 @@
-package com.yt;
+package com.yt.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.http.converter.HttpMessageConverter;
