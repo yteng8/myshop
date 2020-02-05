@@ -2,7 +2,7 @@ package com.yt.service.springsecurity;
 
 import com.yt.entity.JwtUser;
 import com.yt.entity.User;
-import com.yt.repository.UserRepository;
+import com.yt.mapper.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

@@ -16,6 +16,7 @@ import java.util.Collections;
  */
 public class JwtUser implements UserDetails {
 
+    private int id;
     private String username;
     private String password;
     private Collection<? extends GrantedAuthority> authorities;
@@ -23,10 +24,11 @@ public class JwtUser implements UserDetails {
     public JwtUser() {
     }
 
-    public JwtUser(User loginUser) {
-        username = loginUser.getUsername();
-        password = loginUser.getPassword();
-        authorities = Collections.singleton(new SimpleGrantedAuthority(loginUser.getRole()));
+    public JwtUser(User user) {
+        id = user.getId();
+        username = user.getUsername();
+        password = user.getPassword();
+        authorities = Collections.singleton(new SimpleGrantedAuthority(user.getRole()));
 
     }
 

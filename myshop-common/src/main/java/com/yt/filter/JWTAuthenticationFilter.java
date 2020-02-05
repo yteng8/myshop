@@ -32,8 +32,8 @@ public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilte
 
     public JWTAuthenticationFilter(AuthenticationManager authenticationManager) {
         this.authenticationManager = authenticationManager;
-        // 设置拦截的路径
-        super.setFilterProcessesUrl("/system/auth/login");
+        // 设置拦截的路径 即登录路径
+        super.setFilterProcessesUrl("/system/login");
     }
 
     @Override

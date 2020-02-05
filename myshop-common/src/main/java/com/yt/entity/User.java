@@ -9,6 +9,7 @@ package com.yt.entity;
  */
 public class User {
 
+    private int id;
     private String username;
     private String password;
     private String role;
@@ -37,10 +38,19 @@ public class User {
         this.role = role;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
         return "User{" +
-                "username='" + username + '\'' +
+                "id=" + id +
+                ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", role='" + role + '\'' +
                 '}';
