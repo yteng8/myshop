@@ -17,23 +17,40 @@
         <result property="role" column="rolename"/>
     </resultMap>
 
-    <!-- 插入用户用户名和密码 -->
-    <insert id="insertUsernameAndPassword" parameterType="com.yt.entity.User" useGeneratedKeys="true" keyProperty="id">
+    <!-- 根据用户名查询用户是否存在count>0表示存在，count=0表示不存在 -->
+    <select id="selectExistUserByUsername" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM system_user
+        WHERE username = #{username}
+    </select>
+
+    <!-- 插入用户详细信息除了roleName -->
+    <insert id="insertSystemUserInfo" parameterType="com.yt.model.system.user.SystemUserInfo" useGeneratedKeys="true" keyProperty="id">
         <selectKey keyProperty="id" resultType="int" order="AFTER">
             select last_insert_id()
         </selectKey>
-        insert into system_user(username,password) values(#{username},#{password})
+        insert into system_user(username,system_user.password,system_user.real,age,sex,entryTime) values(#{username},#{password},#{real},#{age},#{sex},#{entryTime})
     </insert>
 
     <!-- 插入用户所拥有的角色 -->
-    <insert id="insertRolename" parameterType="com.yt.model.user.Role" useGeneratedKeys="true" keyProperty="id">
+    <insert id="insertRolename" parameterType="com.yt.model.system.user.Role" useGeneratedKeys="true" keyProperty="id">
         <selectKey keyProperty="id" resultType="int" order="AFTER">
             select last_insert_id()
         </selectKey>
         insert into system_role(rolename) values(#{rolename})
     </insert>
+
+    <!-- 向system_user_role表中插入数据，关联用户表和角色表 -->
     <insert id="insertUserIdAndRoleId" parameterType="java.lang.Integer">
         insert into system_user_role(userId,roleId) values(#{userId},#{roleId})
     </insert>
+
+    <!-- 查询角色名是否存在 -->
+    <select id="selectExistRoleName" parameterType="com.yt.model.system.user.Role" resultType="java.lang.Integer">
+        <!-- 如果为空则赋值为0 -->
+        select IFNULL(MAX(id),0) as id
+        from system_role
+        where rolename = #{rolename}
+    </select>
 
 </mapper>

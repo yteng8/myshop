@@ -5,29 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c45191fb-d5b9-4ac5-835d-e18097ba90be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myshop-mapper/src/main/resources/Mapper/UserRepository.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-model/src/main/java/com/yt/model/user/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-model/src/main/java/com/yt/model/user/SystemUserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/AdminAuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/impl/AdminAuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/system_auth/AdminAuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/system_auth/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/exception/entity/ExceptionInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/exception/myexception/GlobalExceptionHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/exception/myexception/NoInputException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/entity/JwtUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/entity/JwtUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/filter/JWTAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/filter/JWTAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-mapper/src/main/java/com/yt/mapper/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-model/src/main/java/com/yt/model/jwt/JwtUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-model/src/main/java/com/yt/model/user/LoginUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-model/src/main/java/com/yt/model/user/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/springsecurity/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/springsecurity/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/system/SystemAuthService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/MyShopApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/MyShopApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/system_auth/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-web/target/classes/com/yt/MyShopApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/target/classes/com/yt/MyShopApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-mapper/src/main/java/com/yt/mapper/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-mapper/src/main/java/com/yt/mapper/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-mapper/src/main/resources/Mapper/UserRepository.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-mapper/src/main/resources/Mapper/UserRepository.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-model/src/main/java/com/yt/model/user/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-model/src/main/java/com/yt/model/system/user/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-model/src/main/java/com/yt/model/user/SystemUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-model/src/main/java/com/yt/model/system/user/SystemUserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/AdminAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/AdminAuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/impl/AdminAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/impl/AdminAuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/system_auth/AdminAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/system_auth/AdminAuthController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,18 +97,19 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.yt.controller" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.yt" />
-      <recent name="com.yt.entity" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yt.exception.entity" />
+      <recent name="com.yt" />
+      <recent name="com.yt.entity" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MyShopApplication">
@@ -316,7 +305,9 @@
       <workItem from="1580699509072" duration="3265000" />
       <workItem from="1580783493243" duration="19243000" />
       <workItem from="1580808493281" duration="4342000" />
-      <workItem from="1580869386335" duration="23008000" />
+      <workItem from="1580869386335" duration="23735000" />
+      <workItem from="1580956612891" duration="20526000" />
+      <workItem from="1580979861067" duration="353000" />
     </task>
     <task id="LOCAL-00001" summary="2020/1/11 框架搭建好，还没有加入springsecurity">
       <created>1578724315237</created>
@@ -332,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580813706455</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2020/2/5 springsecurity+jwt+springboot+mybatis搭建完成，还未完成超级管理员登录后给子管理员和客服管理员增加信息">
+      <created>1580897446115</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580897446115</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,7 +339,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020/1/11 框架搭建好，还没有加入springsecurity" />
     <MESSAGE value="2020/2/4 springsecurity+jwt还差一个mapper就搭建完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/2/4 springsecurity+jwt还差一个mapper就搭建完成" />
+    <MESSAGE value="2020/2/5 springsecurity+jwt+springboot+mybatis搭建完成，还未完成超级管理员登录后给子管理员和客服管理员增加信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020/2/5 springsecurity+jwt+springboot+mybatis搭建完成，还未完成超级管理员登录后给子管理员和客服管理员增加信息" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="98" key="#Project_Structure" timestamp="1577952205939">
@@ -364,10 +363,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="75" y="96" width="1460" height="701" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580873132319" />
-    <state x="721" y="129" width="519" height="702" key="#com.intellij.ide.util.MemberChooser" timestamp="1580897104423">
+    <state x="721" y="129" width="519" height="702" key="#com.intellij.ide.util.MemberChooser" timestamp="1580976441657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="721" y="129" width="519" height="702" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580897104423" />
+    <state x="721" y="129" width="519" height="702" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1580976441657" />
     <state x="513" y="432" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1580872840623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -376,46 +375,46 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580877461858" />
-    <state x="376" y="43" key="CommitChangelistDialog2" timestamp="1580813700825">
+    <state x="376" y="43" key="CommitChangelistDialog2" timestamp="1580897434698">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="376" y="43" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580813700825" />
+    <state x="376" y="43" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580897434698" />
     <state x="822" y="205" key="FileChooserDialogImpl" timestamp="1580700677181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="822" y="205" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580700677181" />
-    <state width="1865" height="210" key="GridCell.Tab.0.bottom" timestamp="1580893071327">
+    <state width="1328" height="234" key="GridCell.Tab.0.bottom" timestamp="1580975768780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580893071327" />
-    <state width="1865" height="210" key="GridCell.Tab.0.center" timestamp="1580893071327">
+    <state width="1328" height="234" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580975768780" />
+    <state width="1328" height="234" key="GridCell.Tab.0.center" timestamp="1580975768780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="210" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580893071327" />
-    <state width="1865" height="210" key="GridCell.Tab.0.left" timestamp="1580893071327">
+    <state width="1328" height="234" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580975768780" />
+    <state width="1328" height="234" key="GridCell.Tab.0.left" timestamp="1580975768780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="210" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580893071327" />
-    <state width="1865" height="210" key="GridCell.Tab.0.right" timestamp="1580893071327">
+    <state width="1328" height="234" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580975768780" />
+    <state width="1328" height="234" key="GridCell.Tab.0.right" timestamp="1580975768780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="210" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580893071327" />
-    <state width="1865" height="210" key="GridCell.Tab.1.bottom" timestamp="1580893071328">
+    <state width="1328" height="234" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580975768780" />
+    <state width="1328" height="234" key="GridCell.Tab.1.bottom" timestamp="1580975768780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="210" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580893071328" />
-    <state width="1865" height="210" key="GridCell.Tab.1.center" timestamp="1580893071328">
+    <state width="1328" height="234" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1580975768780" />
+    <state width="1328" height="234" key="GridCell.Tab.1.center" timestamp="1580975768780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="210" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580893071328" />
-    <state width="1865" height="210" key="GridCell.Tab.1.left" timestamp="1580893071327">
+    <state width="1328" height="234" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1580975768780" />
+    <state width="1328" height="234" key="GridCell.Tab.1.left" timestamp="1580975768780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="210" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580893071327" />
-    <state width="1865" height="210" key="GridCell.Tab.1.right" timestamp="1580893071328">
+    <state width="1328" height="234" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1580975768780" />
+    <state width="1328" height="234" key="GridCell.Tab.1.right" timestamp="1580975768780">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="210" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580893071328" />
+    <state width="1328" height="234" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1580975768780" />
     <state width="1867" height="224" key="GridCell.Tab.2.bottom" timestamp="1577952354545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -452,14 +451,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="824" y="58" key="Registry/0.0.1920.1040@0.0.1920.1040" timestamp="1577953827155" />
-    <state x="42" y="136" width="1535" height="883" key="SettingsEditor" timestamp="1580870262614">
+    <state x="42" y="136" width="1535" height="883" key="SettingsEditor" timestamp="1580979790909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="42" y="136" width="1535" height="883" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580870262614" />
-    <state x="567" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1580699718728">
+    <state x="42" y="136" width="1535" height="883" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580979790909" />
+    <state x="567" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1580979886642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="306" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580699718728" />
+    <state x="567" y="306" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580979886642" />
     <state x="1191" y="186" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577954922779">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

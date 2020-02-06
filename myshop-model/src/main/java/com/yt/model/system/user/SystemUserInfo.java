@@ -1,6 +1,7 @@
-package com.yt.model.user;
+package com.yt.model.system.user;
 
-import java.util.Date;
+
+import java.sql.Date;
 
 /**
  * @author admin

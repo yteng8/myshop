@@ -1,4 +1,4 @@
-package com.yt.model.user;
+package com.yt.model.system.user;
 
 /**
  * @author admin
