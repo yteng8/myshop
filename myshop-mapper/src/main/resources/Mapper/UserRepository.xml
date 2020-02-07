@@ -53,4 +53,43 @@
         where rolename = #{rolename}
     </select>
 
+    <!-- 查询所有的系统用户并封装到模型中 -->
+    <select id="selectAllSystemUserInfoByPage" resultMap="rMSelectAllSystemUserInfoByPage">
+        SELECT su.id, su.username, su.password, su.real, su.age, su.sex, su.entryTime, sr.rolename as roleName
+        FROM system_user su
+        join system_user_role sur
+        on su.id = sur.userId
+        join system_role sr
+        on sr.id = sur.roleId
+    </select>
+    <resultMap id="rMSelectAllSystemUserInfoByPage" type="com.yt.model.system.user.vo.SystemUserInfoVo">
+        <result property="id" column="id"></result>
+        <result property="username" column="username"></result>
+        <result property="password" column="password"></result>
+        <result property="real" column="real"></result>
+        <result property="age" column="age"></result>
+        <result property="sex" column="sex"></result>
+        <result property="entryTime" column="entryTime"></result>
+        <result property="roleName" column="roleName"></result>
+    </resultMap>
+
+    <!-- 更新system_user信息 -->
+    <update id="updateSystemInfoToSystemUser" parameterType="com.yt.model.system.user.SystemUserInfo">
+        UPDATE system_user set username=#{username}, sex=#{sex}, system_user.real=#{real}, age=#{age}
+        where id=#{id}
+    </update>
+
+    <!-- 更新system_user_role信息 -->
+    <update id="updateSystemInfoToSystemUserRole" parameterType="com.yt.model.system.user.UserRole">
+        update system_user_role set roleId=#{roleId}
+        where userId=#{userId}
+    </update>
+
+    <!-- 根据UserRole模型中的RoleName查询roleId -->
+    <select id="selectRoleIdByRoleName" resultType="java.lang.Integer" parameterType="com.yt.model.system.user.UserRole">
+        select id
+        from system_role
+        where rolename=#{roleName}
+    </select>
+
 </mapper>

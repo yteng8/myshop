@@ -29,8 +29,8 @@ public class JwtTokenUtils {
     // 角色的key
     private static final String ROLE_CLAIMS = "rol";
 
-    // 过期时间是120秒，既是两分钟
-    private static final long EXPIRATION = 3600L;
+    // 过期时间是600秒，既是10分钟
+    private static final long EXPIRATION = 600L;
 
     // 选择了记住我之后的过期时间为7天
     private static final long EXPIRATION_REMEMBER = 604800L;

@@ -3,8 +3,12 @@ package com.yt.mapper.repository;
 import com.yt.entity.User;
 import com.yt.model.system.user.Role;
 import com.yt.model.system.user.SystemUserInfo;
+import com.yt.model.system.user.UserRole;
+import com.yt.model.system.user.vo.SystemUserInfoVo;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.data.repository.CrudRepository;
+
+import java.util.List;
 
 /**
  * @author admin
@@ -56,5 +60,32 @@ public interface UserRepository extends CrudRepository<User, Integer>{
      * @return  角色id
      */
     int selectExistRoleName(Role role);
+
+    /**
+     * 查询所有系统用户信息
+     * @return 系统用户信息模型
+     */
+    List<SystemUserInfoVo> selectAllSystemUserInfoByPage();
+
+    /**
+     * 向system_user更新user信息
+     * @param systemUserInfo 实体模型
+     * @return 更新的条数
+     */
+    int updateSystemInfoToSystemUser(SystemUserInfo systemUserInfo);
+
+    /**
+     * 向system_user_role更新用户角色关联信息
+     * @param userRole 实体模型
+     * @return 更新的条数
+     */
+    int updateSystemInfoToSystemUserRole(UserRole userRole);
+
+    /**
+     * 根据roleName查询roleId
+     * @param userRole 模型
+     * @return roleId
+     */
+    int selectRoleIdByRoleName(UserRole userRole);
 
 }
