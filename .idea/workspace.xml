@@ -4,20 +4,7 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c45191fb-d5b9-4ac5-835d-e18097ba90be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/entity/page/PageRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/entity/page/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/util/PageUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-model/src/main/java/com/yt/model/system/user/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-model/src/main/java/com/yt/model/system/user/vo/SystemUserInfoVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/util/JwtTokenUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/util/JwtTokenUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-mapper/src/main/java/com/yt/mapper/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-mapper/src/main/java/com/yt/mapper/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-mapper/src/main/resources/Mapper/UserRepository.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-mapper/src/main/resources/Mapper/UserRepository.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/AdminAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/AdminAuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/impl/AdminAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/impl/AdminAuthServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/system_auth/AdminAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/system_auth/AdminAuthController.java" afterDir="false" />
-    </list>
+    <list default="true" id="c45191fb-d5b9-4ac5-835d-e18097ba90be" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -309,7 +296,7 @@
       <workItem from="1580869386335" duration="23735000" />
       <workItem from="1580956612891" duration="20526000" />
       <workItem from="1580979861067" duration="2633000" />
-      <workItem from="1581041671803" duration="25568000" />
+      <workItem from="1581041671803" duration="25992000" />
     </task>
     <task id="LOCAL-00001" summary="2020/1/11 框架搭建好，还没有加入springsecurity">
       <created>1578724315237</created>
@@ -339,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580980341647</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2020/2/7 人员管理子系统还差delete就完成">
+      <created>1581074006369</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581074006369</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,7 +344,8 @@
     <MESSAGE value="2020/2/4 springsecurity+jwt还差一个mapper就搭建完成" />
     <MESSAGE value="2020/2/5 springsecurity+jwt+springboot+mybatis搭建完成，还未完成超级管理员登录后给子管理员和客服管理员增加信息" />
     <MESSAGE value="2020/2/6 springsecurity+jwt+springboot+mybatis+spring彻底搭建完成, 完成了admin登录后注册cadmin和客服人员" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/2/6 springsecurity+jwt+springboot+mybatis+spring彻底搭建完成, 完成了admin登录后注册cadmin和客服人员" />
+    <MESSAGE value="2020/2/7 人员管理子系统还差delete就完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020/2/7 人员管理子系统还差delete就完成" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="98" key="#Project_Structure" timestamp="1577952205939">
@@ -389,18 +384,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580877461858" />
-    <state x="303" y="43" key="CommitChangelistDialog2" timestamp="1580980338194">
+    <state x="303" y="43" key="CommitChangelistDialog2" timestamp="1581074280570">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="303" y="43" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1580980338194" />
+    <state x="303" y="43" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581074280570" />
     <state x="822" y="205" key="FileChooserDialogImpl" timestamp="1580700677181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="822" y="205" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580700677181" />
-    <state x="813" y="388" width="324" height="264" key="Github.ShareDialog" timestamp="1580981616083">
+    <state x="813" y="388" width="324" height="264" key="Github.ShareDialog" timestamp="1581074273001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="813" y="388" width="324" height="264" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580981616083" />
+    <state x="813" y="388" width="324" height="264" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581074273001" />
     <state width="1865" height="197" key="GridCell.Tab.0.bottom" timestamp="1581073231539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
