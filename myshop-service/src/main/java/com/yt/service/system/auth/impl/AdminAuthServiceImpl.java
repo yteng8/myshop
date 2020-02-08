@@ -12,6 +12,7 @@ import com.yt.model.system.user.vo.SystemUserInfoVo;
 import com.yt.service.system.auth.AdminAuthService;
 import com.yt.util.PageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -154,10 +155,7 @@ public class AdminAuthServiceImpl implements AdminAuthService {
             // 向角色表中插入新增的角色
             userRepository.insertRolename(role); //返回角色id
             // 向system_user_role 插入数据
-            System.out.println("--------  "+role.getId());
             userRole.setRoleId(role.getId());
-            System.out.println("-------roleId "+userRole.getRoleId());
-            System.out.println("-------userId "+userRole.getUserId());
             int updateNum4 = userRepository.updateSystemInfoToSystemUserRole(userRole);
             if (updateNum3 == 1 || updateNum4 == 1) {
                 returnFlag = 1;
@@ -167,6 +165,26 @@ public class AdminAuthServiceImpl implements AdminAuthService {
         msg.put("msg",returnFlag);
         return msg;
     }
+
+    @Override
+    @Transactional
+    public Map<String, Integer> removeSystemUserInfoById(Integer id) {
+        Map<String,Integer> msg = new HashMap<String,Integer>();
+        int returnFlag = -1;
+        if(id == 17){
+            msg.put("msg",-1);
+            return msg;
+        }
+        int num1 = userRepository.deleteSystemInfoToSystemUser(id);
+        int num2 = userRepository.deleteSystemInfoToSystemUserRole(id);
+        if (num1 == 1&&num2==1){
+            returnFlag = 1;
+        }
+        msg.put("msg",returnFlag);
+        return  msg;
+    }
+
+
 
 
 }

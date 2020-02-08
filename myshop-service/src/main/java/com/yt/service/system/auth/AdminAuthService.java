@@ -27,5 +27,17 @@ public interface AdminAuthService {
      */
     PageResult getAllSystemUserInfo(Integer pageNum,Integer pageSize);
 
+    /**
+     * 修改系统管理员的信息
+     * @param modifyUser
+     * @return msg：1修改成功, msg:-1 修改失败
+     */
     Map<String,Integer> modifySystemUserInfo(Map<String,String> modifyUser);
+
+    /**
+     * 根据用户id删除系统管理员信息
+     * @param id 系统管理员id
+     * @return msg:1 成功 msg:0 失败
+     */
+    Map<String,Integer> removeSystemUserInfoById(Integer id);
 }

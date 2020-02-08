@@ -54,7 +54,7 @@ public class AdminAuthController {
     }
 
     @ApiOperation(value = "超级管理员修改子管理员和客服管理员信息")
-    @ApiImplicitParam(name = "modifyUser",value = "必填6个值：id(int),username,age(int),sex(int),real,roleName;返回msg：-1失败，msg：0成功")
+    @ApiImplicitParam(name = "modifyUser",value = "必填6个值：id(int),username,age(int),sex(int),real,roleName;返回msg：-1失败，msg：1成功")
     @PutMapping("systemUserInfo")
     @PreAuthorize("hasRole('ADMIN')")
     public Map<String,Integer> updateSystemUserInfo(@RequestBody Map<String,String> modifyUser) throws NoInputException{
@@ -62,6 +62,15 @@ public class AdminAuthController {
             throw new NoInputException("输入异常");
         }
         return adminAuthService.modifySystemUserInfo(modifyUser);
+    }
+
+    @DeleteMapping("systemUserInfo/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
+    public Map<String,Integer> removeSystemUserInfo(@PathVariable("id") Integer id) throws NoInputException {
+        if (id == null ){
+            throw new NoInputException("删除id值为空");
+        }
+        return adminAuthService.removeSystemUserInfoById(id);
     }
 
 

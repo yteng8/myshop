@@ -88,4 +88,18 @@ public interface UserRepository extends CrudRepository<User, Integer>{
      */
     int selectRoleIdByRoleName(UserRole userRole);
 
+    /**
+     * 根据id删除system_user中的信息
+     * @param id
+     * @return
+     */
+    int deleteSystemInfoToSystemUser(Integer id);
+
+    /**
+     * 根据id(userId)删除system_user_role中的信息
+     * @param id userId
+     * @return
+     */
+    int deleteSystemInfoToSystemUserRole(Integer id);
+
 }
