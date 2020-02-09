@@ -2,7 +2,9 @@ package com.yt.controller.system_auth;
 
 import com.yt.entity.page.PageResult;
 import com.yt.exception.myexception.NoInputException;
+import com.yt.filter.MyLoginDuplicateFilter;
 import com.yt.service.system.auth.AdminAuthService;
+import com.yt.util.RedisUtils;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -29,6 +31,7 @@ public class AdminAuthController {
     @Autowired
     private AdminAuthService adminAuthService;
 
+
     @ApiOperation(value = "超级管理员为子管理员和客服管理员注册", notes = "注册的数据有username(String)用户名, age(int)年龄," +
             " entryTime(String)入职时间, password(String)密码, real(String)真实姓名, sex(int)性别, roleName(String)角色名称 ; msg:0 表示重复插入，msg:-1 表示插入失败, msg:1 表示插入成功;输入不能为空且字段必须全部全部填写")
     @ApiImplicitParam(name = "registerUser",value = "被注册用户的详细信息",required = true)
@@ -38,6 +41,8 @@ public class AdminAuthController {
         if (registerUser == null || registerUser.size() != 7){
             throw new NoInputException("输入异常");
         }
+
+
         return adminAuthService.registerUserService(registerUser);
     }
 
@@ -50,6 +55,7 @@ public class AdminAuthController {
         if (pageNum == null || pageSize == null){
             throw new NoInputException("分页异常");
         }
+
         return adminAuthService.getAllSystemUserInfo(pageNum,pageSize);
     }
 

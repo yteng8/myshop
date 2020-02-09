@@ -26,7 +26,7 @@ spring:
     #redis连接超时时间（单位为毫秒）
     timeout: 1000
     #redis连接池配置
-    jedis:
+    lettuce:
       pool:
       #最大可用连接数（默认为8，负数表示无限）
         max-active: 8
@@ -35,7 +35,7 @@ spring:
       #最小空闲连接数（默认为0，该值只有为正数才有作用）
         min-idle: 0
       #从连接池中获取连接最大等待时间（默认为-1，单位为毫秒，负数表示无限）
-        max-wait: 1000
+        max-wait: -1
   datasource:
     url: jdbc:mysql://localhost:3306/myshop?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root

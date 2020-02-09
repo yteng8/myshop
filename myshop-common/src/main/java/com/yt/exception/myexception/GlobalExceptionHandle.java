@@ -25,4 +25,14 @@ public class GlobalExceptionHandle {
         exceptionInfo.setUrl(req.getRequestURL().toString());
         return exceptionInfo;
     }
+
+    @ExceptionHandler(value = LoginDuplicateException.class)
+    @ResponseBody
+    public ExceptionInfo LoginDuplicateExceptionHandle(HttpServletRequest req,LoginDuplicateException e){
+        ExceptionInfo exceptionInfo = new ExceptionInfo();
+        exceptionInfo.setCode(452);
+        exceptionInfo.setMessage(e.getMessage());
+        exceptionInfo.setUrl(req.getRequestURL().toString());
+        return exceptionInfo;
+    }
 }

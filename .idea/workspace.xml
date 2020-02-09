@@ -5,12 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c45191fb-d5b9-4ac5-835d-e18097ba90be" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_vintage_junit_vintage_engine_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/exception/myexception/LoginDuplicateException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/filter/MyLoginDuplicateFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/util/RedisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-web/src/test/java/com/yt/test/MyLoginDuplicateFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-web/src/test/java/com/yt/test/Test1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-mapper/src/main/java/com/yt/mapper/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-mapper/src/main/java/com/yt/mapper/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-common/myshop-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-common/myshop-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/exception/myexception/GlobalExceptionHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/exception/myexception/GlobalExceptionHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/filter/JWTAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/filter/JWTAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-common/target/classes/com/yt/exception/myexception/GlobalExceptionHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-common/target/classes/com/yt/exception/myexception/GlobalExceptionHandle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-common/target/classes/com/yt/filter/JWTAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-common/target/classes/com/yt/filter/JWTAuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-mapper/myshop-mapper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-mapper/myshop-mapper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myshop-mapper/src/main/resources/Mapper/UserRepository.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-mapper/src/main/resources/Mapper/UserRepository.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/AdminAuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/AdminAuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/impl/AdminAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/impl/AdminAuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-mapper/target/classes/Mapper/UserRepository.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-mapper/target/classes/Mapper/UserRepository.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-model/myshop-model.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-model/myshop-model.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-service/myshop-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-service/myshop-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/springsecurity/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/springsecurity/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-service/target/classes/com/yt/service/springsecurity/UserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-service/target/classes/com/yt/service/springsecurity/UserDetailsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-web/myshop-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/myshop-web.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/system_auth/AdminAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/system_auth/AdminAuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-web/src/test/java/com/yt/controller/TestControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-web/target/classes/com/yt/controller/system_auth/AdminAuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/target/classes/com/yt/controller/system_auth/AdminAuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-web/target/test-classes/com/yt/controller/TestControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +64,9 @@
         <option value="JUnit5 Test Class" />
         <option value="FxmlFile" />
         <option value="spring-beans.schema" />
-        <option value="MybatisMapper" />
         <option value="Interface" />
+        <option value="MybatisMapper" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -85,7 +110,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="jdk1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
@@ -96,6 +122,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.yt.test" />
+      <recent name="com.yt.filter" />
       <recent name="com.yt.controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -103,36 +131,64 @@
       <recent name="com.yt" />
       <recent name="com.yt.entity" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.yt" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+      <recent name="com.yt.ApplicationTests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEA_workspace\myshop\myshop-web\src\main\resources" />
+      <recent name="E:\IDEA_workspace\myshop\myshop-common\src\main\resources\Mapper" />
+      <recent name="E:\IDEA_workspace\myshop\myshop-common\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MyShopApplication">
-    <configuration name="TestControllerTest.returnS" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MyLoginDuplicateFilterTest.checkLoginDuplicateFilter (1)">
+    <configuration name="MyLoginDuplicateFilterTest.checkLoginDuplicateFilter (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myshop-web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yt.controller.*" />
+          <option name="PATTERN" value="com.yt.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yt.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.yt.controller.TestControllerTest" />
-      <option name="METHOD_NAME" value="returnS" />
+      <option name="PACKAGE_NAME" value="com.yt.test" />
+      <option name="MAIN_CLASS_NAME" value="com.yt.test.MyLoginDuplicateFilterTest" />
+      <option name="METHOD_NAME" value="checkLoginDuplicateFilter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyShopApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="myshop-web" />
+    <configuration name="MyLoginDuplicateFilterTest.checkLoginDuplicateFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myshop-common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yt.swagger.*" />
+          <option name="PATTERN" value="com.yt.filter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yt.swagger.MyShopApplication" />
+      <option name="PACKAGE_NAME" value="com.yt.filter" />
+      <option name="MAIN_CLASS_NAME" value="com.yt.filter.MyLoginDuplicateFilterTest" />
+      <option name="METHOD_NAME" value="checkLoginDuplicateFilter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1.tes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myshop-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yt.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yt.test" />
+      <option name="MAIN_CLASS_NAME" value="com.yt.test.Test1" />
+      <option name="METHOD_NAME" value="tes" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,6 +205,32 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.yt.MyShopApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="myshop-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yt.MyShopApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyShopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="myshop-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yt.MyShopApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -247,21 +329,25 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TestControllerTest.returnS" />
       <item itemvalue="Spring Boot.MyshopCommonApplication" />
       <item itemvalue="Spring Boot.MyshopMapperApplication" />
       <item itemvalue="Spring Boot.MyshopServiceApplication" />
       <item itemvalue="Spring Boot.MyshopWebApplication" />
       <item itemvalue="Spring Boot.MyShopApplication (2)" />
       <item itemvalue="Spring Boot.MyShopApplication" />
-      <item itemvalue="Spring Boot.MyShopApplication (1)" />
       <item itemvalue="Tomcat Server.tomcat9" />
+      <item itemvalue="JUnit.MyLoginDuplicateFilterTest.checkLoginDuplicateFilter" />
+      <item itemvalue="Spring Boot.MyShopApplication (3)" />
+      <item itemvalue="JUnit.Test1.tes" />
+      <item itemvalue="JUnit.MyLoginDuplicateFilterTest.checkLoginDuplicateFilter (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.MyShopApplication" />
-        <item itemvalue="Spring Boot.MyShopApplication (1)" />
-        <item itemvalue="JUnit.TestControllerTest.returnS" />
+        <item itemvalue="JUnit.MyLoginDuplicateFilterTest.checkLoginDuplicateFilter (1)" />
+        <item itemvalue="JUnit.Test1.tes" />
+        <item itemvalue="Spring Boot.MyShopApplication (3)" />
+        <item itemvalue="Spring Boot.MyShopApplication (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -305,7 +391,8 @@
       <workItem from="1580979861067" duration="2633000" />
       <workItem from="1581041671803" duration="26154000" />
       <workItem from="1581074656818" duration="109000" />
-      <workItem from="1581131216899" duration="4986000" />
+      <workItem from="1581131216899" duration="22302000" />
+      <workItem from="1581213273512" duration="24272000" />
     </task>
     <task id="LOCAL-00001" summary="2020/1/11 框架搭建好，还没有加入springsecurity">
       <created>1578724315237</created>
@@ -349,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581074314145</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2020/2/8 人员管理子系统完成">
+      <created>1581139820925</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1581139820925</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,13 +456,14 @@
     <MESSAGE value="2020/2/6 springsecurity+jwt+springboot+mybatis+spring彻底搭建完成, 完成了admin登录后注册cadmin和客服人员" />
     <MESSAGE value="2020/2/7 人员管理子系统还差delete就完成" />
     <MESSAGE value="2020/2/7 人员管理子系统还差delete就完成V1" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/2/7 人员管理子系统还差delete就完成V1" />
+    <MESSAGE value="2020/2/8 人员管理子系统完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020/2/8 人员管理子系统完成" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="452" y="98" key="#Project_Structure" timestamp="1577952205939">
+    <state x="452" y="98" key="#Project_Structure" timestamp="1581224243180">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="98" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1577952205939" />
+    <state x="452" y="98" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1581224243180" />
     <state x="452" y="96" key="#SQL_Dialects" timestamp="1580873117685">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -385,26 +480,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="75" y="96" width="1460" height="701" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580873132319" />
-    <state x="721" y="129" width="519" height="702" key="#com.intellij.ide.util.MemberChooser" timestamp="1581132561032">
+    <state x="721" y="129" width="519" height="702" key="#com.intellij.ide.util.MemberChooser" timestamp="1581225187106">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="721" y="129" width="519" height="702" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581132561032" />
+    <state x="721" y="129" width="519" height="702" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581225187106" />
+    <state x="1112" y="259" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1581228517490">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1112" y="259" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581228517490" />
+    <state x="1091" y="277" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1581219974853">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1091" y="277" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581219974853" />
     <state x="513" y="432" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1580872840623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="513" y="432" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580872840623" />
-    <state x="701" y="354" width="518" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1581050517381">
+    <state x="701" y="354" width="518" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1581224344444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="701" y="354" width="518" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1581050517381" />
+    <state x="701" y="354" width="518" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1581224344444" />
     <state x="627" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580877461858">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580877461858" />
-    <state x="303" y="43" key="CommitChangelistDialog2" timestamp="1581074312683">
+    <state x="303" y="43" key="CommitChangelistDialog2" timestamp="1581139815529">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="303" y="43" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581074312683" />
+    <state x="303" y="43" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581139815529" />
     <state x="822" y="205" key="FileChooserDialogImpl" timestamp="1580700677181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -413,38 +516,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="813" y="388" width="324" height="264" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581074273001" />
-    <state width="1865" height="197" key="GridCell.Tab.0.bottom" timestamp="1581134442285">
+    <state width="1865" height="222" key="GridCell.Tab.0.bottom" timestamp="1581245569723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="197" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581134442285" />
-    <state width="1865" height="197" key="GridCell.Tab.0.center" timestamp="1581134442285">
+    <state width="1865" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581245569723" />
+    <state width="1865" height="222" key="GridCell.Tab.0.center" timestamp="1581245569722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="197" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581134442285" />
-    <state width="1865" height="197" key="GridCell.Tab.0.left" timestamp="1581134442284">
+    <state width="1865" height="222" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581245569722" />
+    <state width="1865" height="222" key="GridCell.Tab.0.left" timestamp="1581245569722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="197" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581134442284" />
-    <state width="1865" height="197" key="GridCell.Tab.0.right" timestamp="1581134442285">
+    <state width="1865" height="222" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581245569722" />
+    <state width="1865" height="222" key="GridCell.Tab.0.right" timestamp="1581245569722">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="197" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581134442285" />
-    <state width="1865" height="197" key="GridCell.Tab.1.bottom" timestamp="1581134442286">
+    <state width="1865" height="222" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581245569722" />
+    <state width="1865" height="222" key="GridCell.Tab.1.bottom" timestamp="1581245569723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="197" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581134442286" />
-    <state width="1865" height="197" key="GridCell.Tab.1.center" timestamp="1581134442286">
+    <state width="1865" height="222" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581245569723" />
+    <state width="1865" height="222" key="GridCell.Tab.1.center" timestamp="1581245569723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="197" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581134442286" />
-    <state width="1865" height="197" key="GridCell.Tab.1.left" timestamp="1581134442286">
+    <state width="1865" height="222" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581245569723" />
+    <state width="1865" height="222" key="GridCell.Tab.1.left" timestamp="1581245569723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="197" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581134442286" />
-    <state width="1865" height="197" key="GridCell.Tab.1.right" timestamp="1581134442286">
+    <state width="1865" height="222" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581245569723" />
+    <state width="1865" height="222" key="GridCell.Tab.1.right" timestamp="1581245569723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="197" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581134442286" />
+    <state width="1865" height="222" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581245569723" />
     <state width="1867" height="224" key="GridCell.Tab.2.bottom" timestamp="1577952354545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -489,14 +592,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="452" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581074330811" />
-    <state x="567" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1581131216859">
+    <state x="567" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1581213276817">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="306" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581131216859" />
-    <state x="1191" y="186" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1577954922779">
+    <state x="567" y="306" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581213276817" />
+    <state x="1191" y="186" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581228518882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1191" y="186" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1577954922779" />
+    <state x="1191" y="186" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581228518882" />
     <state x="56" y="157" width="1598" height="688" key="new project wizard" timestamp="1578492036705">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -505,5 +608,15 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1578117787128" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.1.RELEASE/spring-security-core-5.2.1.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetailsService.class</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
