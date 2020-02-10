@@ -3,6 +3,7 @@ package com.yt.controller.system_auth;
 import com.yt.entity.page.PageResult;
 import com.yt.exception.myexception.NoInputException;
 import com.yt.filter.MyLoginDuplicateFilter;
+import com.yt.service.springsecurity.UserDetailsServiceImpl;
 import com.yt.service.system.auth.AdminAuthService;
 import com.yt.util.RedisUtils;
 import io.swagger.annotations.Api;
@@ -11,6 +12,7 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,7 +25,7 @@ import java.util.Map;
  * @Description 超级管理员管理子管理员和客服管理员
  * @createTime 2020年02月04日 14:51:00
  */
-@Api(tags = "admin超级管理员的人员管理")
+@Api(tags = "人员管理")
 @RestController
 @RequestMapping("/system/protected/auth/")
 public class AdminAuthController {
@@ -31,6 +33,9 @@ public class AdminAuthController {
     @Autowired
     private AdminAuthService adminAuthService;
 
+    @Autowired
+    @Qualifier("userDetailsServiceImpl")
+    private UserDetailsServiceImpl userDetailsService;
 
     @ApiOperation(value = "超级管理员为子管理员和客服管理员注册", notes = "注册的数据有username(String)用户名, age(int)年龄," +
             " entryTime(String)入职时间, password(String)密码, real(String)真实姓名, sex(int)性别, roleName(String)角色名称 ; msg:0 表示重复插入，msg:-1 表示插入失败, msg:1 表示插入成功;输入不能为空且字段必须全部全部填写")
@@ -70,6 +75,8 @@ public class AdminAuthController {
         return adminAuthService.modifySystemUserInfo(modifyUser);
     }
 
+    @ApiOperation(value = "超级管理员删除子管理员和客服人员信息")
+    @ApiImplicitParam(name = "id",value = "被删除id")
     @DeleteMapping("systemUserInfo/{id}")
     @PreAuthorize("hasRole('ADMIN')")
     public Map<String,Integer> removeSystemUserInfo(@PathVariable("id") Integer id) throws NoInputException {
@@ -78,6 +85,22 @@ public class AdminAuthController {
         }
         return adminAuthService.removeSystemUserInfoById(id);
     }
+
+    @ApiOperation(value = "超级管理员查看在线的系统用户")
+    @GetMapping("onlineSystemUser")
+    @PreAuthorize("hasRole('ADMIN')")
+    public Map<Object,Object> getOnlineSystemUser(){
+        return userDetailsService.countOnlineSystemUser();
+    }
+
+    @ApiOperation(value = "系统管理员注销登录")
+    @ApiImplicitParam(name = "username",value = "被注销用户的用户名")
+    @DeleteMapping("onlineSystemUser/{username}")
+    @PreAuthorize("hasAnyRole({'ADMIN','KADMIN','CADMIN'})")
+    public Map<String,Integer> removeOnlineSystemUser(@PathVariable("username") String username){
+        return userDetailsService.deleteOnlineSystemUser(username);
+    }
+
 
 
 

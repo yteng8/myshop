@@ -2,7 +2,6 @@ package com.yt.service.springsecurity;
 
 import com.yt.entity.JwtUser;
 import com.yt.entity.User;
-import com.yt.exception.myexception.LoginDuplicateException;
 import com.yt.mapper.repository.UserRepository;
 import com.yt.util.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +9,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author admin
@@ -31,22 +33,28 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException{
 
         User user = new User();
-        // 先向redis中查找是否存在, 如果存在则不再产生token
-
-        if (redisUtils.hHasKey("systemLoginUser",s)){
-
-            user = (User) redisUtils.hget("systemLoginUser",s);
-            return new JwtUser(null);
-        }else {
-            // 如果redis中没有, 则先向数据库中拿取, 再将user存进Redis中 设置过期时间
-            user = userRepository.findByUsername(s);
-            redisUtils.hset("systemLoginUser", s, user);
-            return new JwtUser(user);
+        user = userRepository.findByUsername(s);
+        // 如果redis中没有该用户, 则将改用户加入redis中
+        if (!(redisUtils.hHasKey("onlineSystemUser",s))){
+            Map<String, Object> map = new HashMap<>();
+            map.put(s,user);
+            redisUtils.hmset("onlineSystemUser",map);
         }
+        return new JwtUser(user);
+    }
 
-        //User user = new User();
-        //user = userRepository.findByUsername(s);
-        // return new JwtUser(user);
+    // 从redis中统计在线系统用户
+    public Map<Object,Object> countOnlineSystemUser(){
+        Map<Object,Object> map = redisUtils.hmget("onlineSystemUser");
+        return map;
+    }
+
+    // 从redis中移除系统用户
+    public Map<String,Integer> deleteOnlineSystemUser(String username){
+        Map<String, Integer> map = new HashMap<>();
+        redisUtils.hdel("onlineSystemUser",username);
+        map.put("msg",1);
+        return map;
     }
 
 }

@@ -5,6 +5,9 @@ import com.yt.util.RedisUtils;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author admin
  * @version 1.0.0
@@ -21,14 +24,13 @@ public class MyLoginDuplicateFilterTest extends Test1{
     @Test
     public void checkLoginDuplicateFilter(){
 
-        try {
-            System.out.println(redisUtils.hasKey("systemLoginUser"));
-            System.out.println(redisUtils.hHasKey("sysnUr", "yt"));
-            User user = (User)redisUtils.hget("systemLoginUser","yt");
-            System.out.println(user.getRole());
-        } catch (Exception e){
-            throw new RuntimeException("Redis连接异常");
+        Map<Object,Object> map = redisUtils.hmget("systemLoginUser");
+        for (Map.Entry<Object,Object> entry: map.entrySet()
+             ) {
+            System.out.println(entry.getKey()+"    "+entry.getValue());
         }
 
     }
+
+
 }
