@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yt.mapper.system.datadictionary.AdminDataDictionaryDao">
+    <!-- admin查询所有数据字典 -->
+    <select id="selectAllDataDictionary" resultMap="dataDictionaryMap">
+        select id,typeCode,typeName,name
+        from data_dictionary
+    </select>
+    <resultMap id="dataDictionaryMap" type="com.yt.model.system.datadictionary.DataDictionary">
+        <result column="id" property="id"/>
+        <result column="typeCode" property="typeCode"/>
+        <result column="typeName" property="typeName"/>
+        <result column="name" property="name"/>
+    </resultMap>
+
+    <!-- 根据typeCode和name查询数据字典是否存在 -->
+    <select id="selectExistDataDictionary" parameterType="com.yt.model.system.datadictionary.DataDictionary" resultType="java.lang.Integer">
+        select count(1)
+        from data_dictionary
+		where typeCode=#{typeCode} and name=#{name}
+    </select>
+
+    <!-- 插入数据字典 -->
+    <insert id="insertDataDictionary" parameterType="com.yt.model.system.datadictionary.DataDictionary">
+        insert into data_dictionary(typeCode,typeName,name) values (#{typeCode},#{typeName},#{name})
+    </insert>
+
+    <!-- 根据id更新数据字典 -->
+    <update id="updateDataDictionary" parameterType="com.yt.model.system.datadictionary.DataDictionary">
+        update data_dictionary set name=#{name}
+        where id = #{id}
+    </update>
+
+    <!-- 根据id删除数据字典 -->
+    <delete id="deleteDataDictionaryById" parameterType="java.lang.Integer">
+        delete from data_dictionary where id=#{id}
+    </delete>
+
+</mapper>

@@ -16,8 +16,5 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = MyShopApplication.class)
 public class Test1 {
-    @Test
-    public void tes(){
-        System.out.println(111);
-    }
+
 }

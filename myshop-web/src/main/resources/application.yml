@@ -90,7 +90,7 @@ spring:
 #设置mybatis
 mybatis:
   #mapper.xml所在位置
-  mapper-locations: classpath*:Mapper/*.xml
+  mapper-locations: classpath*:Mapper/*/*.xml
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 #设置pagehelper
