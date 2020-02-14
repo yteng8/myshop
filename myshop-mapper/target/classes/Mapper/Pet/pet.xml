@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.yt.mapper.pet.PetDao">
+    <insert id="insertPetBySystem" parameterType="com.yt.model.Pet">
+        insert into pet(title,selling,price,age,type,variety,sellAddress,bornAddress,pic1,pic2,pic3,mainPic,description,addTime)
+        values(#{title},#{selling},#{price},#{age},#{type},#{variety},#{sellAddress},#{bornAddress},#{pic1},#{pic2},#{pic3},#{mainPic},#{description},#{addTime})
+    </insert>
+
+
+
+</mapper>

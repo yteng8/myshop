@@ -5,25 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c45191fb-d5b9-4ac5-835d-e18097ba90be" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myshop-mapper/src/main/java/com/yt/mapper/system/datadictionary/AdminDataDictionaryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-mapper/src/main/resources/Mapper/System/AdminDataDictionary.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-model/src/main/java/com/yt/model/system/datadictionary/DataDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/AdminDataDictionaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/system/auth/impl/AdminDataDictionaryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/system_auth/AdminDataDictionaryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myshop-web/src/test/java/com/yt/test/system/datadictionary/AdminDataDictionaryServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/config/UploadFileConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/config/UploadFilePathConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/util/FileUploadUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-common/src/main/resources/mycommon.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-mapper/src/main/java/com/yt/mapper/pet/PetDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-mapper/src/main/resources/Mapper/Pet/pet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-model/src/main/java/com/yt/model/Pet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/pet/PetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-service/src/main/java/com/yt/service/pet/PetServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/PetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/system_auth/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-web/src/test/java/com/yt/test/JavaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myshop-web/src/test/java/com/yt/test/uploadfile/UploadFileTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-mapper/src/main/resources/Mapper/UserRepository.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-mapper/src/main/resources/Mapper/System/UserRepository.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-mapper/target/classes/Mapper/UserRepository.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/system_auth/AdminAuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/system_auth/AdminAuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-web/src/main/java/com/yt/controller/system_auth/TaskController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/config/CustomMvcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-common/src/main/java/com/yt/config/CustomMvcConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myshop-common/target/classes/com/yt/config/CustomMvcConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-common/target/classes/com/yt/config/CustomMvcConfiguration.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myshop-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-web/src/test/java/com/yt/test/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/src/test/java/com/yt/test/Test1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myshop-web/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-web/target/classes/com/yt/controller/system_auth/AdminAuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/target/classes/com/yt/controller/system_auth/AdminAuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-web/target/classes/com/yt/controller/system_auth/TaskController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/myshop-web/target/test-classes/com/yt/test/Test1.class" beforeDir="false" afterPath="$PROJECT_DIR$/myshop-web/target/test-classes/com/yt/test/Test1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +52,10 @@
         <option value="JUnit5 Test Class" />
         <option value="FxmlFile" />
         <option value="spring-beans.schema" />
+        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
         <option value="MybatisMapper" />
-        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -103,7 +102,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="jdk.selected.JAVA_MODULE" value="jdk1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="F:/ssm商城/SSM商城系统/Buy/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -118,24 +117,24 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.yt" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-      <recent name="com.yt.ApplicationTests" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.yt.exception.entity" />
       <recent name="com.yt" />
       <recent name="com.yt.entity" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="com.yt.ApplicationTests" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEA_workspace\myshop\myshop-mapper\src\main\resources\Mapper\Pet" />
       <recent name="E:\IDEA_workspace\myshop\myshop-mapper\src\main\resources\Mapper\System" />
       <recent name="E:\IDEA_workspace\myshop\myshop-mapper\src\main\resources\Mapper" />
       <recent name="E:\IDEA_workspace\myshop\myshop-web\src\main\resources" />
       <recent name="E:\IDEA_workspace\myshop\myshop-common\src\main\resources\Mapper" />
-      <recent name="E:\IDEA_workspace\myshop\myshop-common\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MyShopApplication">
+  <component name="RunManager" selected="JUnit.JavaTest.test1">
     <configuration name="AdminDataDictionaryServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myshop-web" />
       <extension name="coverage">
@@ -167,49 +166,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyLoginDuplicateFilterTest.checkLoginDuplicateFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JavaTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myshop-web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yt.test.redis.*" />
+          <option name="PATTERN" value="com.yt.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.yt.test" />
-      <option name="MAIN_CLASS_NAME" value="com.yt.test.MyLoginDuplicateFilterTest" />
-      <option name="METHOD_NAME" value="checkLoginDuplicateFilter" />
+      <option name="MAIN_CLASS_NAME" value="com.yt.test.JavaTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test1.tes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UploadFileTest.pathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myshop-web" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yt.test.redis.*" />
+          <option name="PATTERN" value="com.yt.test.uploadfile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.yt.test" />
-      <option name="MAIN_CLASS_NAME" value="com.yt.test.Test1" />
-      <option name="METHOD_NAME" value="tes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserDetailsServiceImplTest.deleteOnlineSystemUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myshop-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.yt.test.redis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.yt.test.redis" />
-      <option name="MAIN_CLASS_NAME" value="com.yt.test.redis.UserDetailsServiceImplTest" />
-      <option name="METHOD_NAME" value="deleteOnlineSystemUser" />
+      <option name="PACKAGE_NAME" value="com.yt.test.uploadfile" />
+      <option name="MAIN_CLASS_NAME" value="com.yt.test.uploadfile.UploadFileTest" />
+      <option name="METHOD_NAME" value="pathTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -351,8 +334,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.Test1.tes" />
-      <item itemvalue="JUnit.UserDetailsServiceImplTest.deleteOnlineSystemUser" />
+      <item itemvalue="JUnit.AdminDataDictionaryServiceImplTest.getAllDataDictionary" />
+      <item itemvalue="JUnit.AdminDataDictionaryServiceImplTest" />
       <item itemvalue="Spring Boot.MyshopCommonApplication" />
       <item itemvalue="Spring Boot.MyshopMapperApplication" />
       <item itemvalue="Spring Boot.MyshopServiceApplication" />
@@ -360,16 +343,16 @@
       <item itemvalue="Spring Boot.MyShopApplication (2)" />
       <item itemvalue="Spring Boot.MyShopApplication" />
       <item itemvalue="Tomcat Server.tomcat9" />
-      <item itemvalue="JUnit.AdminDataDictionaryServiceImplTest.getAllDataDictionary" />
-      <item itemvalue="JUnit.AdminDataDictionaryServiceImplTest" />
+      <item itemvalue="JUnit.UploadFileTest.pathTest" />
+      <item itemvalue="JUnit.JavaTest.test1" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.MyShopApplication" />
+        <item itemvalue="JUnit.JavaTest.test1" />
+        <item itemvalue="JUnit.UploadFileTest.pathTest" />
         <item itemvalue="JUnit.AdminDataDictionaryServiceImplTest.getAllDataDictionary" />
         <item itemvalue="JUnit.AdminDataDictionaryServiceImplTest" />
-        <item itemvalue="JUnit.UserDetailsServiceImplTest.deleteOnlineSystemUser" />
-        <item itemvalue="JUnit.Test1.tes" />
       </list>
     </recent_temporary>
   </component>
@@ -416,7 +399,9 @@
       <workItem from="1581131216899" duration="22302000" />
       <workItem from="1581213273512" duration="24603000" />
       <workItem from="1581300378422" duration="9210000" />
-      <workItem from="1581478932824" duration="14197000" />
+      <workItem from="1581478932824" duration="14551000" />
+      <workItem from="1581568399874" duration="866000" />
+      <workItem from="1581650858426" duration="18714000" />
     </task>
     <task id="LOCAL-00001" summary="2020/1/11 框架搭建好，还没有加入springsecurity">
       <created>1578724315237</created>
@@ -481,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581322139298</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="2020/2/12 数据字典完成">
+      <created>1581501118631</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1581501118631</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +489,8 @@
     <MESSAGE value="2020/2/8 人员管理子系统完成" />
     <MESSAGE value="2020/2/9 整合redis完成" />
     <MESSAGE value="2020/2/10 用户管理系统完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020/2/10 用户管理系统完成" />
+    <MESSAGE value="2020/2/12 数据字典完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020/2/12 数据字典完成" />
   </component>
   <component name="WindowStateProjectService">
     <state x="452" y="98" key="#Project_Structure" timestamp="1581224243180">
@@ -520,10 +513,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="75" y="96" width="1460" height="701" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580873132319" />
-    <state x="721" y="129" width="519" height="702" key="#com.intellij.ide.util.MemberChooser" timestamp="1581499266843">
+    <state x="721" y="129" width="519" height="702" key="#com.intellij.ide.util.MemberChooser" timestamp="1581662157720">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="721" y="129" width="519" height="702" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581499266843" />
+    <state x="721" y="129" width="519" height="702" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1581662157720" />
     <state x="1112" y="259" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1581228517490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -544,50 +537,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="627" y="209" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1580877461858" />
-    <state x="303" y="43" key="CommitChangelistDialog2" timestamp="1581322135601">
+    <state x="303" y="43" key="CommitChangelistDialog2" timestamp="1581501113291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="303" y="43" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581322135601" />
-    <state x="822" y="205" key="FileChooserDialogImpl" timestamp="1580700677181">
+    <state x="303" y="43" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1581501113291" />
+    <state x="822" y="205" key="FileChooserDialogImpl" timestamp="1581568508159">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="822" y="205" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1580700677181" />
+    <state x="822" y="205" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581568508159" />
     <state x="813" y="388" width="324" height="264" key="Github.ShareDialog" timestamp="1581074273001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="813" y="388" width="324" height="264" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581074273001" />
-    <state width="1865" height="222" key="GridCell.Tab.0.bottom" timestamp="1581499696916">
+    <state width="1865" height="289" key="GridCell.Tab.0.bottom" timestamp="1581675487681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="222" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581499696916" />
-    <state width="1865" height="222" key="GridCell.Tab.0.center" timestamp="1581499696916">
+    <state width="1865" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581675487681" />
+    <state width="1865" height="289" key="GridCell.Tab.0.center" timestamp="1581675487681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="222" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581499696916" />
-    <state width="1865" height="222" key="GridCell.Tab.0.left" timestamp="1581499696916">
+    <state width="1865" height="289" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581675487681" />
+    <state width="1865" height="289" key="GridCell.Tab.0.left" timestamp="1581675487681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="222" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581499696916" />
-    <state width="1865" height="222" key="GridCell.Tab.0.right" timestamp="1581499696916">
+    <state width="1865" height="289" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581675487681" />
+    <state width="1865" height="289" key="GridCell.Tab.0.right" timestamp="1581675487681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="222" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581499696916" />
-    <state width="1865" height="222" key="GridCell.Tab.1.bottom" timestamp="1581499696917">
+    <state width="1865" height="289" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581675487681" />
+    <state width="1865" height="289" key="GridCell.Tab.1.bottom" timestamp="1581675487682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="222" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581499696917" />
-    <state width="1865" height="222" key="GridCell.Tab.1.center" timestamp="1581499696917">
+    <state width="1865" height="289" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581675487682" />
+    <state width="1865" height="289" key="GridCell.Tab.1.center" timestamp="1581675487681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="222" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581499696917" />
-    <state width="1865" height="222" key="GridCell.Tab.1.left" timestamp="1581499696916">
+    <state width="1865" height="289" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581675487681" />
+    <state width="1865" height="289" key="GridCell.Tab.1.left" timestamp="1581675487681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="222" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581499696916" />
-    <state width="1865" height="222" key="GridCell.Tab.1.right" timestamp="1581499696917">
+    <state width="1865" height="289" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581675487681" />
+    <state width="1865" height="289" key="GridCell.Tab.1.right" timestamp="1581675487681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1865" height="222" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581499696917" />
+    <state width="1865" height="289" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581675487681" />
     <state width="1867" height="224" key="GridCell.Tab.2.bottom" timestamp="1577952354545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -628,14 +621,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="42" y="136" width="1535" height="883" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1580980696491" />
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1581322157648">
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1581501171055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581322157648" />
-    <state x="567" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1581479233808">
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1581501171055" />
+    <state x="567" y="306" key="com.intellij.ide.util.TipDialog" timestamp="1581650857137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="567" y="306" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581479233808" />
+    <state x="567" y="306" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1581650857137" />
     <state x="1191" y="186" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581485571105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
