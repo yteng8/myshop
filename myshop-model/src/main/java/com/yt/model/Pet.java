@@ -1,6 +1,8 @@
 package com.yt.model;
 
+
 import java.sql.Date;
+import java.util.List;
 
 /**
  * @author admin
@@ -30,6 +32,15 @@ public class Pet {
     private int evaluationCount;
     private int evaluationId;
     private Date addTime;
+    private List<EvaluationInfo> evaluations;
+
+    public List<EvaluationInfo> getEvaluations() {
+        return evaluations;
+    }
+
+    public void setEvaluations(List<EvaluationInfo> evaluations) {
+        this.evaluations = evaluations;
+    }
 
     public int getId() {
         return id;

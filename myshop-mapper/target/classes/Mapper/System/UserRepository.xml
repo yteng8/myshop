@@ -4,7 +4,7 @@
 
     <!-- 根据用户名查找用户 -->
     <select id="findByUsername" resultMap="usermap">
-        SELECT system_user.username, system_user.`password`, system_role.rolename
+        SELECT system_user.id, system_user.username, system_user.`password`, system_role.rolename
         FROM system_user
         JOIN system_user_role
         on system_user.id = system_user_role.userId
@@ -13,6 +13,7 @@
         WHERE system_user.username = #{username}
     </select>
     <resultMap id="usermap" type="com.yt.entity.User">
+        <result property="id" column="id"></result>
         <result property="username" column="username"/>
         <result property="password" column="password"/>
         <result property="role" column="rolename"/>

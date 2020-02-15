@@ -1,5 +1,6 @@
 package com.yt.util;
 
+import com.yt.entity.image.ImageName;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -49,7 +50,11 @@ public class FileUploadUtils {
         return newFilename;
     }
 
-
+    /**
+     * 判断是否是一张图片
+     * @param multipartFile
+     * @return
+     */
     public boolean isImage(MultipartFile multipartFile){
         boolean flag=false;
         String h = getUploadFileName(multipartFile).toLowerCase();
@@ -57,5 +62,26 @@ public class FileUploadUtils {
             flag = true;
         }
         return flag;
+    }
+
+    /**
+     * 删除图片
+     * @param imageName
+     * @return
+     */
+    public boolean removeImage(ImageName imageName){
+        String imagePath1 = "E:\\IDEA_workspace\\myshopImg\\"+imageName.getPic1();
+        String imagePath2 = "E:\\IDEA_workspace\\myshopImg\\"+imageName.getPic2();
+        String imagePath3 = "E:\\IDEA_workspace\\myshopImg\\"+imageName.getPic3();
+        String imagePath4 = "E:\\IDEA_workspace\\myshopImg\\"+imageName.getMainPic();
+        File file1 = new File(imagePath1);
+        File file2 = new File(imagePath2);
+        File file3 = new File(imagePath3);
+        File file4 = new File(imagePath4);
+        if (file1.delete() && file2.delete() && file3.delete() && file4.delete()){
+            return true;
+        }else {
+            return false;
+        }
     }
 }

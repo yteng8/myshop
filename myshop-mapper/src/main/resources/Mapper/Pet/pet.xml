@@ -1,11 +1,90 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.yt.mapper.pet.PetDao">
+    <!-- 插入宠物基本信息 -->
     <insert id="insertPetBySystem" parameterType="com.yt.model.Pet">
         insert into pet(title,selling,price,age,type,variety,sellAddress,bornAddress,pic1,pic2,pic3,mainPic,description,addTime)
         values(#{title},#{selling},#{price},#{age},#{type},#{variety},#{sellAddress},#{bornAddress},#{pic1},#{pic2},#{pic3},#{mainPic},#{description},#{addTime})
     </insert>
 
+    <!-- 根据宠物id查询评论id -->
+    <select id="selectEvaluationIdByPetId" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+        select evaluationId
+        from pet
+        where id=#{id}
+    </select>
 
+    <!-- 根据宠物id查询图片名称 -->
+    <select id="selectImageName" parameterType="java.lang.Integer" resultMap="imageNameMap">
+        select pic1,pic2,pic3,mainPic
+        from pet
+        where id=#{id}
+    </select>
+
+    <resultMap id="imageNameMap" type="com.yt.entity.image.ImageName">
+        <result property="pic1" column="pic1"/>
+        <result property="pic2" column="pic2"/>
+        <result property="pic3" column="pic3"/>
+        <result property="mainPic" column="mainPic"/>
+    </resultMap>
+
+    <!-- 根据评论id删除评论信息 -->
+    <delete id="deleteEvaluationBySystem" parameterType="java.lang.Integer">
+        delete from evaluation where evaluationId=#{evaluationId}
+    </delete>
+
+    <!-- 根据宠物id系统管理员删除宠物信息 -->
+    <delete id="deletePetBySystem" parameterType="java.lang.Integer">
+        delete from pet where id=#{id}
+    </delete>
+
+    <!-- 系统管理员更新宠物信息 -->
+    <update id="updatePetBySystem" parameterType="com.yt.model.Pet">
+        update pet set title=#{title}, selling=#{selling},price=#{price},age=#{age},type=#{type},variety=#{variety},
+        sellAddress=#{sellAddress},bornAddress=#{bornAddress},pic1=#{pic1},pic2=#{pic2},pic3=#{pic3},mainPic=#{mainPic},
+        description=#{description},addTime=#{addTime}
+        where id = #{id}
+    </update>
+    
+    <select id="selectAllPet" resultMap="allPetMap">
+        select p.id,p.title,p.selling,p.price,p.age,p.type,p.variety,p.sellAddress,p.bornAddress,p.pic1,p.pic2,p.pic3,p.mainPic,p.description,p.visitors,p.questionCount,
+        p.selledCount,p.evaluationCount,p.evaluationId,p.addTime,
+        ei.id eId,ei.evaluationInfoId,ei.username,ei.evaluationInfo,ei.createTime
+        from pet p
+        left JOIN evaluation e
+        on p.evaluationId = e.evaluationId
+        left join evaluationinfo ei
+        on e.evaluationInfoId = ei.evaluationInfoId
+    </select>
+
+    <resultMap id="allPetMap" type="com.yt.model.Pet">
+        <result property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="selling" column="selling"/>
+        <result property="price" column="price"/>
+        <result property="age" column="age"/>
+        <result property="type" column="type"/>
+        <result property="variety" column="variety"/>
+        <result property="sellAddress" column="sellAddress"/>
+        <result property="bornAddress" column="bornAddress"/>
+        <result property="pic1" column="pic1"/>
+        <result property="pic2" column="pic2"/>
+        <result property="pic3" column="pic3"/>
+        <result property="picMain" column="picMain"/>
+        <result property="description" column="description"/>
+        <result property="visitors" column="visitors"/>
+        <result property="questionCount" column="questionCount"/>
+        <result property="selledCount" column="selledCount"/>
+        <result property="evaluationCount" column="evaluationCount"/>
+        <result property="addTime" column="addTime"/>
+        <result property="evaluationId" column="evaluationId"/>
+        <collection property="evaluations" ofType="com.yt.model.EvaluationInfo">
+            <result property="id" column="eId"/>
+            <result property="evaluationInfoId" column="evaluationInfoId"/>
+            <result property="username" column="username"/>
+            <result property="evaluationInfo" column="evaluationInfo"/>
+            <result property="createTime" column="createTime"/>
+        </collection>
+    </resultMap>
 
 </mapper>
